@@ -1,0 +1,36 @@
+/* UTILITIES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    color: $negro;
+    
+}
+@viewport {
+    max-zoom: 1;
+  }
+.background-circle {
+    background: rgb(134, 181, 207);
+    background: linear-gradient(90deg, $rosado 0%, $celeste 100%);
+    border-radius: 50%;
+    filter: blur(150px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 90%;
+    width: 70%;
+    z-index: -1;
+    position: fixed;
+    background-url: ("http://api.thumbr.it/whitenoise-361x370.png?background=4ea6caff&noise=626262&density=15&opacity=15")
+}
