@@ -14,8 +14,31 @@ $negro: #000000;
 // alter
 $rosado2: #FCB2E3;
 $celeste2: #7BC6DC;
+
 // typography
-// @font-face {
-//     font-family: "hola";
-//     src: url("./../../fonts/solveig-display.otf") format('otf');
-// }
+
+@font-face {
+    font-family: 'Solveig Display';
+    src: url("/src/fonts/solveig/SolveigDisplay.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Solveig DemiBold';
+    src: url("/src/fonts/solveig/SolveigDemiBold-Italic.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Saira Condensed';
+    src: url("/src/fonts/saira-condensed/SairaCondensed-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+$Solveig-Display: 'Solveig Display';
+$Solveig-DemiBold: 'Solveig DemiBold';
+$SairaCondensed: 'Saira Condensed';
+

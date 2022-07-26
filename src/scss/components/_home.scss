@@ -1,16 +1,20 @@
 .home-section {
     >h1 {
-        font-size: 4rem;
+        font-size: 5rem;
         font-weight: 700;
         text-align: center;
         margin-bottom: 2rem;
+        font-family: $Solveig-Display;
+        font-weight: 200;
 
         >b {
-            font-size: 5.5rem;
+            font-size: 9rem;
             font-weight: 700;
             text-align: center;
             margin-bottom: 2rem;
             color: $amarillo;
+            font-family: $Solveig-DemiBold;
+
             text-shadow:
                 $negro 1px 0px 0px,
                 $negro 0.540302px 0.841471px 0px,
@@ -27,35 +31,47 @@
     div:nth-child(1) {
         display: flex;
         justify-content: center;
+
         >img {
             clip-path: polygon(100% 0, 88% 0, 84% 5%, 69% 5%, 66% 0, 0 0, 0 43%, 6% 47%, 0 51%, 0 100%, 24% 100%, 28% 93%, 51% 93%, 55% 100%, 100% 100%, 100% 51%, 95% 47%, 100% 44%);
-            width: 110%;
+            width: 100%;
             border-radius: 5px;
-            &::before{
+
+            &::before {
                 clip-path: polygon(100% 0, 88% 0, 84% 5%, 69% 5%, 66% 0, 0 0, 0 43%, 6% 47%, 0 51%, 0 100%, 24% 100%, 28% 93%, 51% 93%, 55% 100%, 100% 100%, 100% 51%, 95% 47%, 100% 44%);
             }
         }
     }
 
     div:nth-child(2) {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        >p {
-            margin-left: 100px;
-            font-size: 2em;
-            color: $negro;
+        >div {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin-left: 50px;
+            margin-top: 50px;
+
+            >p {
+                font-size: 1.7em;
+                color: $negro;
+                font-family: $SairaCondensed;
+                letter-spacing: -1px;
+            }
+
+            >button {
+                width: 220px;
+                height: 40px;
+                text-transform: uppercase;
+                background-color: $amarillo;
+                border: 2px solid $marron;
+                border-radius: 5px;
+                margin-top: 30px;
+                font-family: $Solveig-Display;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
         }
-        >button {
-            width: 300px;
-            height: 40px;
-            text-transform: uppercase;
-            background-color: $amarillo;
-            border: 2px solid $marron;
-            border-radius: 5px;
-            margin-top: 30px;
-        }
+
     }
 }
-
