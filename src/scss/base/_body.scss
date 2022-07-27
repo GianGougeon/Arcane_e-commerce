@@ -15,12 +15,9 @@ li {
 
 body {
     color: $negro;
-
 }
 
-@viewport {
-    max-zoom: 1;
-}
+
 
 .background-circle {
     background: rgb(134, 181, 207);
@@ -30,10 +27,9 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 90%;
     width: 70%;
+    height: 90%;
     z-index: -1;
-    position: fixed;
-
+    position: absolute;
 
 }

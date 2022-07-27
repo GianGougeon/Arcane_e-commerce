@@ -3,8 +3,11 @@
 @import './components/boostrap-grid';
 //body
 @import "./base/body";
-// Header
+// Header / Footer
 @import './base/header';
+@import './base/footer';
 //home
 @import './components/home';
-@import './components/clothes';
+@import './components/home.clothes';
+@import './components/home.deco';
+@import './components/home.other';

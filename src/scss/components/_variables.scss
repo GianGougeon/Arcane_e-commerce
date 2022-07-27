@@ -1,42 +1,27 @@
-// Colour palette:
 
-//primera base
+
+// Colour palette //
+
+//first
 $blanco: #E9EAEA;
 $verde: #A9FC7D;
 $rosado: #FF47C1;
 $celeste: #0C96D2;
-// segunda base
+//second
 $amarillo: #F3D27D;
 $rojo: #8F1A32;
 $marron: #491B01;
 $azul: #03152B;
 $negro: #000000;
 // alter
-$rosado2: #FCB2E3;
-$celeste2: #7BC6DC;
+// change opacity
+$background-color-opacity: .6;
+$rosado2: rgba($rosado, $background-color-opacity);
+$celeste2: rgba($celeste, $background-color-opacity+.2);
 
-// typography
+// typography //
 
-@font-face {
-    font-family: 'Solveig Display';
-    src: url("/src/fonts/solveig/SolveigDisplay.otf") format("opentype");
-    font-style: normal;
-    font-weight: normal;
-}
-@font-face {
-    font-family: 'Solveig DemiBold';
-    src: url("/src/fonts/solveig/SolveigDemiBold-Italic.otf") format("opentype");
-    font-style: normal;
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: 'Saira Condensed';
-    src: url("/src/fonts/saira-condensed/SairaCondensed-Regular.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-
+@import "./../base/typography";
 
 $Solveig-Display: 'Solveig Display';
 $Solveig-DemiBold: 'Solveig DemiBold';
