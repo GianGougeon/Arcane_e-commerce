@@ -35,7 +35,7 @@
     >h2 {
         display: flex;
         justify-content: center;
-        font-size: 2.5rem;
+        font-size: 2.6rem;
         font-weight: 700;
         margin-bottom: 2rem;
         font-family: $Solveig-Display
@@ -50,7 +50,7 @@
             margin: 30px;
             display: flex;
         }
-
+        /* img */
         >div:nth-child(1),
         div:nth-child(2) {
             overflow: hidden;
@@ -69,7 +69,7 @@
             height: $img-h;
             border-right: $img-border solid #A48E83;
 
-            >div {
+            >div>div {
                 position: absolute;
                 background: #E9E9E9;
                 top: $img-border;

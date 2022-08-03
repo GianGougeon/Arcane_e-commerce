@@ -21,7 +21,7 @@ body {
 
 .background-circle {
     background: rgb(134, 181, 207);
-    background: linear-gradient(90deg, $rosado 0%, $celeste 100%);
+    background: linear-gradient(90deg,$rosado 0%, #D968D0 30%, #8AADEE 60%, $celeste 100%);
     border-radius: 50%;
     filter: blur(150px);
     top: 50%;

@@ -1,182 +1,182 @@
+/* Home Section Clothes */
 .home-section-clothes {
     margin-top: 100px;
-
     >h2 {
         display: flex;
         justify-content: center;
-        font-size: 2.5rem;
+        font-size: 3rem;
         font-weight: 700;
         margin-bottom: 2rem;
         font-family: $Solveig-Display
     }
-
-    >div {
-        justify-content: center;
-        display: flex;
-        flex-wrap: wrap;
-
+    .home-section-clothes-border {
+        height: auto;
         >div {
-            margin: 30px;
-            display: flex;
+            margin: 50px 0;
+            /* 1 */
+            >a:nth-child(1) {
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                flex-direction: column;
+                align-items: center;
+                margin: auto;
+                >div:nth-child(1) {
+                    display: inline-block;
+                    position: relative;
+                    width: 300px;
+                    height: 500px;
+                    background: $marron;
+                    box-sizing: border-box;
+                    clip-path: polygon(100% 0, 7% 0, 7% 25%, 0 34%, 0 100%, 100% 100%, 100% 89%, 94% 85%, 94% 62%, 100% 56%);
+                    >div {
+                        position: absolute;
+                        top: 2px;
+                        left: 2px;
+                        width: 296px;
+                        height: 496px;
+                        clip-path: polygon(100% 0, 7% 0, 7% 25%, 0 34%, 0 100%, 100% 100%, 100% 89%, 94% 85%, 94% 62%, 100% 56%);
+                        background: #E9E9E9;
+                        >img {
+                            height: 100%;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                        }
+                    }
+                }
+                >span {
+                    font-family: $Solveig-Display;
+                    color: $rosado;
+                }
+                >span:nth-child(2) {
+                    position: absolute;
+                    top: 90%;
+                    left: 70%;
+                    font-size: 1.8em;
+                }
+                >span:nth-child(3) {
+                    transform: rotate(-90deg);
+                    position: absolute;
+                    top: 50%;
+                    left: 20%;
+                    font-size: 2em;
+                    text-transform: uppercase;
+                }
+                .home-clohes-info {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 300px;
+                    margin: auto;
+                    padding: 20px 0;
+                    color: $negro;
+                    >span {
+                        display: flex;
+                        justify-content: center;
+                        font-family: $SairaCondensed;
+                    }
+                    >span:nth-child(2) {
+                        font-size: 1.5em;
+                        font-weight: bold;
+                        font-family: $Solveig-Display;
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+                &:hover .home-clohes-info {
+                    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+                }
+            }
         }
-    }
+        /*  2 */
+        >div:nth-child(2) {
+            >a{
+                >div{
+                    width: 600px!important;
+                    @media (max-width: 768px) {
+                        width: 300px!important;
+                    }
+                    >div{
+                        width: 596px!important;
+                        @media (max-width: 768px) {
+                            width: 296px!important;
+                        }
+                        >img{
 
-    .img-home-border {
-
-        >div:nth-child(1),
-        div:nth-child(2),
-        div:nth-child(3),
+                        }
+                    }
+                }
+                .home-clohes-info-2{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 600px;
+                    padding: 20px 0;
+                    margin: 0;
+                    color: $negro;
+                    >span {
+                        display: flex;
+                        justify-content: center;
+                        font-family: $SairaCondensed;
+                    }
+                    >span:nth-child(2) {
+                        font-size: 1.5em;
+                        font-weight: bold;
+                        font-family: $Solveig-Display;
+                    }
+                }
+                &:hover .home-clohes-info-2 {
+                    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+                }
+            }
+        }
+        /* 3 */
+        div:nth-child(3) {
+            
+        }
+        /* 4 - 5 */
         div:nth-child(4),
         div:nth-child(5) {
-            overflow: hidden;
-            display: inline-block;
-            position: relative;
-            background: black;
-            box-sizing: border-box;
-            clip-path: polygon(100% 0, 7% 0, 7% 25%, 0 34%, 0 100%, 100% 100%, 100% 89%, 94% 85%, 94% 62%, 100% 56%);
-            // img size
-            $img-size: 60;
-            // image size variable///
-            $img-w: 351px*$img-size/100;
-            $img-h: 609px*$img-size/100;
-            width: $img-w;
-            height: $img-h;
-
-            >img {
-                position: absolute;
-                background: #E9E9E9;
-                top: 2px;
-                left: 2px;
-                width: $img-w - 4px;
-                height: $img-h - 4px;
-                clip-path: polygon(100% 0, 7% 0, 7% 25%, 0 34%, 0 100%, 100% 100%, 100% 89%, 94% 85%, 94% 62%, 100% 56%);
-
-            }
-
-            >span {
-                font-family: $Solveig-Display;
-                color: $rosado;
-            }
-
-            >span:nth-child(2) {
-                position: absolute;
-                top: 89%;
-                left: 80%;
-                font-size: 1.8em;
-            }
-
-            >span:nth-child(3) {
-                transform: rotate(-90deg);
-                position: absolute;
-                top: 50%;
-                font-size: 2em;
-                text-transform: uppercase;
+            >a{
+                >div{
+                    width: 700px!important;
+                    @media (max-width: 768px) {
+                        width: 300px!important;
+                    }
+                    >div{
+                        width: 696px!important;
+                        @media (max-width: 768px) {
+                            width: 296px!important;
+                        }
+                    }
+                }
+                .home-clohes-info-2{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 600px;
+                    padding: 20px 0;
+                    margin: 0;
+                    color: $negro;
+                    >span {
+                        display: flex;
+                        justify-content: center;
+                        font-family: $SairaCondensed;
+                    }
+                    >span:nth-child(2) {
+                        font-size: 1.5em;
+                        font-weight: bold;
+                        font-family: $Solveig-Display;
+                    }
+                }
             }
         }
-
-        >div:nth-child(2) {
-            // img size
-            $img-size: 60;
-            // image size variable///
-            $img-w: 611px*$img-size/100;
-            $img-h: 609px*$img-size/100;
-            width: $img-w;
-            height: $img-h;
-
-            >img {
-                width: $img-w - 4px;
-                height: $img-h - 4px;
-            }
-
-            >span {
-                font-family: $Solveig-Display;
-                color: $rosado;
-            }
-
-            >span:nth-child(2) {
-                position: absolute;
-                top: 89%;
-                left: 82%;
-            }
-
-            >span:nth-child(3) {
-                transform: rotate(-90deg);
-                position: absolute;
-                top: 50%;
-                font-size: 2em;
-                text-transform: uppercase;
-            }
-        }
-
-        >div:nth-child(3) {
-            clip-path: none;
-            // img size
-            $img-size: 60;
-            // image size variable///
-            $img-w: 451px*$img-size/100;
-            $img-h: 609px*$img-size/100;
-            width: $img-w;
-            height: $img-h;
-
-            >img {
-                width: $img-w - 4px;
-                height: $img-h - 4px;
-                clip-path: none;
-            }
-
-            >span {
-                font-family: $Solveig-Display;
-                color: $rosado;
-            }
-
-            >span:nth-child(2) {
-                position: absolute;
-                top: 89%;
-                left: 85%;
-            }
-
-            >span:nth-child(3) {
-                transform: rotate(-90deg);
-                position: absolute;
-                top: 50%;
-                font-size: 2em;
-                text-transform: uppercase;
-            }
-        }
-
-        >div:nth-child(4),
-        div:nth-child(5) {
-            // img size
-            $img-size: 60;
-            $img-square: 640px;
-            // image size variable///
-            $img-w: $img-square*$img-size/100;
-            $img-h: $img-square*$img-size/100;
-            width: $img-w;
-            height: $img-h;
-
-            >img {
-                width: $img-w - 4px;
-                height: $img-h - 4px;
-            }
-
-            >span {
-                font-family: $Solveig-Display;
-                color: $rosado;
-            }
-
-            >span:nth-child(2) {
-                position: absolute;
-                top: 89%;
-                left: 82%;
-            }
-
-            >span:nth-child(3) {
-                transform: rotate(-90deg);
-                position: absolute;
-                top: 50%;
-                font-size: 2em;
-                text-transform: uppercase;
+        /* 6 */
+        >div:nth-child(5) {
+            >div {
+                align-items: flex-start;
             }
         }
     }
@@ -194,7 +194,7 @@
         justify-content: center;
         justify-content: flex-end;
         margin: auto;
-        >svg{
+        >svg {
             margin: 0 20px;
         }
     }

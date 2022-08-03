@@ -1,6 +1,7 @@
 import { BsArrowRight } from 'react-icons/bs'
 
 const home_deco = () => {
+    
     return (
         <section className='home-section-deco container'>
             <h2>

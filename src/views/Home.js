@@ -1,9 +1,12 @@
 import React from 'react'
 import arcaneImage from './../assets/img/arcane-netflix-series-characters.jpg'
+import jaycePort from './../assets/img/home/jaycePort.jpg'
 import { BsArrowRight } from 'react-icons/bs'
 import Home_clothes from '../components/home_clothes'
 import Home_deco from '../components/home_deco'
 import Home_other from '../components/home_other'
+
+
 
 const Home = () => {
 
@@ -13,10 +16,13 @@ const Home = () => {
                 <h1>Become <b>a legend</b></h1>
                 <div className='home-catalog container'>
                     <div className='row'>
-                        <div className='col-md-7'>
-                            <img src={arcaneImage}></img>
+                        <div className='col-sm-12 col-md-8'>
+                            <div>
+                                <img src={arcaneImage} alt="Arcane"></img>
+                            </div>
+                            <img className='Jayce' src={jaycePort} alt="Jayce"></img>
                         </div>
-                        <div className='col-md-5'>
+                        <div className='col-sm-12 col-md-4'>
                             <div>
                                 <p>
                                     Explore a lot of different merch <br></br>
@@ -30,10 +36,10 @@ const Home = () => {
             </section>
 
             <Home_clothes />
-            <Home_deco />
-            <Home_other />
+            {/* <Home_deco />
+            <Home_other /> */}
 
-            
+
 
             <div style={{ margin: "500px" }}></div>
         </>

@@ -1,6 +1,6 @@
 footer {
     overflow: hidden;
-    height: 600px;
+    height: 650px;
     background-color: #005E87;
     font-family: $Solveig-Display;
 
@@ -69,7 +69,7 @@ footer {
     }
 
     >div {
-        height: 400px;
+        height: 450px;
         position: relative;
         overflow: hidden;
 
@@ -78,28 +78,99 @@ footer {
             align-items: center;
             position: relative;
             width: 100%;
-            bottom: 70%;
+            bottom: 68%;
         }
     }
 
     >div>div>div>div {
         display: flex;
         justify-content: center;
-        flex-direction: column;
+        z-index: 3;
 
-        >h3 {
-            color: $blanco;
-            font-size: 1.7em;
-        }
+        >div {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
 
-        >ul {
-            margin-top: 10px;
-
-            >li>a {
-                font-size: 1.1em;
-                color: rgba($blanco, .5);
-                font-weight: 200;
+            >h3 {
+                color: $blanco;
+                font-size: 1.5em;
             }
+
+            >ul {
+                margin-top: 10px;
+
+                >li>a {
+                    font-family: $SairaCondensed;
+                    font-size: 1em;
+                    color: rgba($blanco, .7);
+                    font-weight: 200;
+                }
+            }
+        }
+    }
+
+    .logo-footer {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 50px;
+
+        >div>ul {
+            >li {
+                >a {
+                    >img {
+                        width: 130px;
+                    }
+
+                    >h3 {
+                        display: flex;
+                        justify-content: center;
+                        font-family: $Solveig-Display;
+                        font-weight: 200;
+                        color: rgba($blanco, .7);
+                        font-size: .8em;
+                        letter-spacing: 3px;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-social {
+        >div {
+            >div {
+                >ul {
+                    display: flex;
+                    >li {
+                        $size: 1.5em;
+                        width: $size;
+                        height: $size;
+                        background-color: $amarillo;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 0 3px;
+
+                        >a {
+
+                            >svg {
+                                display: flex;
+                                font-size: 1em;
+                                color: $negro;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer-copy{
+        margin-top: 30px;
+        >span{
+            font-family: $SairaCondensed;
+            color: rgba($blanco, .7);
+
         }
     }
 }
