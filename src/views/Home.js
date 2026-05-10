@@ -1,6 +1,4 @@
 import React from 'react'
-import arcaneImage from './../assets/img/arcane-netflix-series-characters.jpg'
-import jaycePort from './../assets/img/home/jaycePort.jpg'
 import { BsArrowRight } from 'react-icons/bs'
 import Home_clothes from '../components/home_clothes'
 import Home_deco from '../components/home_deco'
@@ -18,9 +16,9 @@ const Home = () => {
                     <div className='row'>
                         <div className='col-sm-12 col-md-8'>
                             <div>
-                                <img src={arcaneImage} alt="Arcane"></img>
+                                <img src="/img/arcane-netflix-series-characters.jpg" alt="Arcane" />
                             </div>
-                            <img className='Jayce' src={jaycePort} alt="Jayce"></img>
+                            <img className='Jayce' src="/img/home/jaycePort.jpg" alt="Jayce" />
                         </div>
                         <div className='col-sm-12 col-md-4'>
                             <div>

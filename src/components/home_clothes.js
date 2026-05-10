@@ -1,11 +1,4 @@
 import { BsArrowRight } from 'react-icons/bs'
-import img11 from './../assets/img/gptr,1400x,front,black-c,188,133,1000,1000-bg,f8f8f8.jpg'
-
-import img1 from './../assets/img/home/1.png'
-import img2 from './../assets/img/home/2.png'
-import img3 from './../assets/img/home/3.png'
-import img4 from './../assets/img/home/4.png'
-import img5 from './../assets/img/home/5.png'
 
 
 const home_clothes = () => {
@@ -20,7 +13,7 @@ const home_clothes = () => {
                     <a href=''>
                         <div>
                             <div>
-                                <img src={img1} />
+                                <img src="/img/home/1.png" alt="Clothes item 1" />
                             </div>
                         </div>
                         <span>
@@ -44,7 +37,7 @@ const home_clothes = () => {
                     <a href="">
                         <div>
                             <div>
-                                <img src={img2} />
+                                <img src="/img/home/2.png" alt="Clothes item 2" />
                             </div>
                         </div>
                         <span>
@@ -68,7 +61,7 @@ const home_clothes = () => {
                     <a href="">
                         <div>
                             <div>
-                                <img src={img3} />
+                                <img src="/img/home/3.png" alt="Clothes item 3" />
                             </div>
                         </div>
                         <span>
@@ -93,7 +86,7 @@ const home_clothes = () => {
                     <a href="">
                         <div>
                             <div>
-                                <img src={img4} />
+                                <img src="/img/home/4.png" alt="Clothes item 4" />
                             </div>
                         </div>
                         <span>
@@ -118,7 +111,7 @@ const home_clothes = () => {
                     <a href="">
                         <div>
                             <div>
-                                <img src={img5} />
+                                <img src="/img/home/5.png" alt="Clothes item 5" />
                             </div>
                         </div>
                         <span>

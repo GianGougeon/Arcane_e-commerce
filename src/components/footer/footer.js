@@ -1,19 +1,20 @@
+"use client";
+
 import React from 'react'
-import img from './../../assets/img/footer/p-y-z_auto_x2.jpg'
 // icons
 import { BsArrowRight } from 'react-icons/bs'
 import { TiSocialFacebook } from 'react-icons/ti'
-import { SiInstagram, SiTwitter } from 'react-icons/si'
+import { SiInstagram } from 'react-icons/si'
+import { FaXTwitter } from 'react-icons/fa6'
 // logo
-import logo from './../../assets/img/header/Arcane_Title_Text.png'
 
 const footer = () => {
     return (
         <footer>
             <div>
-                <img src={img}></img>
+                <img src="/img/footer/p-y-z_auto_x2.jpg" alt="Footer" />
                 <form className='footer-subscribe-form'>
-                    <label for="email container">
+                    <label htmlFor="email">
                         <p>
                             <span>Subscribe</span>to out newsletter
                         </p>
@@ -57,7 +58,7 @@ const footer = () => {
                                 <ul>
                                     <li>
                                         <a>
-                                            <img src={logo} alt="logo" />
+                                            <img src="/img/header/Arcane_Title_Text.png" alt="logo" />
                                             <h3>E-COMMERCE</h3>
                                         </a>
                                     </li>
@@ -84,7 +85,7 @@ const footer = () => {
                                 <ul>
                                     <li><a><SiInstagram/></a></li>
                                     <li><a><TiSocialFacebook/></a></li>
-                                    <li><a><SiTwitter/></a></li>
+                                    <li><a><FaXTwitter/></a></li>
                                 </ul>
                                 <div className='footer-copy'>
                                     <span>

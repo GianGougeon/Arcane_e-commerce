@@ -1,18 +1,18 @@
 @font-face {
   font-family: 'Solveig Display';
-  src: url("/src/fonts/solveig/SolveigDisplay.otf") format("opentype");
+  src: url("/fonts/solveig/SolveigDisplay.otf") format("opentype");
   font-style: normal;
   font-weight: normal; }
 
 @font-face {
   font-family: 'Solveig DemiBold';
-  src: url("/src/fonts/solveig/SolveigDemiBold-Italic.otf") format("opentype");
+  src: url("/fonts/solveig/SolveigDemiBold-Italic.otf") format("opentype");
   font-style: normal;
   font-weight: normal; }
 
 @font-face {
   font-family: 'Saira Condensed';
-  src: url("/src/fonts/saira-condensed/SairaCondensed-Regular.ttf") format("truetype");
+  src: url("/fonts/saira-condensed/SairaCondensed-Regular.ttf") format("truetype");
   font-style: normal;
   font-weight: normal; }
 

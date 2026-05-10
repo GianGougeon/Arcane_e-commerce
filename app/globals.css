@@ -1,0 +1,4 @@
+/* Reutilizamos el CSS existente del proyecto (generado desde SCSS).
+   En Next (app router) este archivo se carga globalmente desde app/layout.js.
+*/
+@import url('../src/css/style.css');

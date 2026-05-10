@@ -1,11 +1,13 @@
+"use client";
+
 import React, {useState} from 'react'
 // import react icon
 import { BiSearch } from 'react-icons/bi'
 import { RiShoppingBag3Line } from 'react-icons/ri'
 import { IoClose } from 'react-icons/io5'
 import { GiHamburgerMenu } from 'react-icons/gi'
+import Link from 'next/link'
 // logo
-import logo from './../../assets/img/header/Arcane_Title_Text.png'
 
 const Header = () => {
     const [hamburger, sethamburger] = useState(true);
@@ -19,7 +21,7 @@ const Header = () => {
                 {/* LOGO */}
                 <div className="logo">
                     <div>
-                    <img src={logo} alt="logo" />
+                    <img src="/img/header/Arcane_Title_Text.png" alt="logo" />
                     <p>E-COMMERCE</p>
                     </div>
                 </div>
@@ -30,23 +32,23 @@ const Header = () => {
                     <label htmlFor="checkbox_toggle" onClick={handleHamburger} className="hamburger">{hamburger ? <GiHamburgerMenu /> : <IoClose />}</label>
                     {/* NAVIGATION MENUS */}
                     <div className="menu">
-                        <li><a href="/">Clothes</a></li>
-                        <li><a href="/">Deco</a></li>
-                        <li><a href="/">Other</a></li>
+                        <li><Link href="/">Clothes</Link></li>
+                        <li><Link href="/">Deco</Link></li>
+                        <li><Link href="/">Other</Link></li>
                     </div>
                 </ul>
                 <ul className='menu-util'>
                     <li>
-                        <a href="/">
+                        <Link href="/">
                             <BiSearch style={{transform: "rotateY(180deg)"}} />
                             <p>Serach</p>
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="/">
+                        <Link href="/">
                             <RiShoppingBag3Line />
                             <p>Cart</p>
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </nav>
